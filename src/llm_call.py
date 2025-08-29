@@ -14,7 +14,7 @@ def call_gemini(prompt, temperature=0.7, top_p=0.95, top_k=40, stop=None):
         prompt (str): The prompt to send to the LLM.
         temperature (float): Controls randomness of output.
         top_p (float): Nucleus sampling parameter (see video explanation).
-        top_k (int): Top-k sampling parameter.
+        top_k (int): Top-k sampling parameter (see video explanation).
         stop (list): Stop sequences.
     Returns:
         str: The generated response.
@@ -23,7 +23,7 @@ def call_gemini(prompt, temperature=0.7, top_p=0.95, top_k=40, stop=None):
     response = model.generate_content(prompt, generation_config={
         'temperature': temperature,
         'top_p': top_p,  # Top-p (nucleus sampling) controls diversity of output
-        'top_k': top_k,
+        'top_k': top_k,  # Top-k limits sampling to the k most likely tokens
         'stop_sequences': stop or []
     })
     return response.text
