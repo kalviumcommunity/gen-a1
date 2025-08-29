@@ -7,6 +7,12 @@ GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 
 genai.configure(api_key=GEMINI_API_KEY)
 
+def count_tokens(text):
+    """
+    Simple token counter (splits on whitespace). For demo purposes only.
+    """
+    return len(text.split())
+
 def call_gemini(prompt, temperature=0.7, top_p=0.95, top_k=40, stop=None):
     """
     Call the Gemini LLM with the given prompt and parameters.
@@ -26,4 +32,8 @@ def call_gemini(prompt, temperature=0.7, top_p=0.95, top_k=40, stop=None):
         'top_k': top_k,  # Top-k limits sampling to the k most likely tokens
         'stop_sequences': stop or []
     })
+    prompt_tokens = count_tokens(prompt)
+    response_tokens = count_tokens(response.text)
+    total_tokens = prompt_tokens + response_tokens
+    print(f"[Token Log] Prompt: {prompt_tokens}, Response: {response_tokens}, Total: {total_tokens}")
     return response.text
