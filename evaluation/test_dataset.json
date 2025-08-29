@@ -1,0 +1,22 @@
+[
+  {
+    "query": "Best warmup for soccer",
+    "expected": "A dynamic warmup for soccer includes jogging, high knees, butt kicks, leg swings, and dynamic stretches."
+  },
+  {
+    "query": "Drills to improve agility",
+    "expected": "Ladder drills, cone zig-zags, and shuttle runs are effective for agility."
+  },
+  {
+    "query": "How can I improve my upper body strength?",
+    "expected": "Incorporate push-ups, pull-ups, and resistance training into your routine."
+  },
+  {
+    "query": "Suggest a weekly training plan for a beginner marathon runner",
+    "expected": "Start with 3-4 runs per week, gradually increasing distance, and include rest days."
+  },
+  {
+    "query": "Give me a warm-up routine before a tennis match.",
+    "expected": "Light jogging, arm circles, dynamic stretches, and shadow swings are ideal."
+  }
+]

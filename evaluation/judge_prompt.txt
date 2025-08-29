@@ -1,0 +1,7 @@
+Compare the following actual and expected responses. Judge if the actual response is correct, partially correct, or incorrect. Give a brief explanation.
+
+User Query: {query}
+Expected: {expected}
+Actual: {actual}
+
+Judgement:
