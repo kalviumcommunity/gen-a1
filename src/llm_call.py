@@ -18,7 +18,7 @@ def call_gemini(prompt, temperature=0.7, top_p=0.95, top_k=40, stop=None):
     Call the Gemini LLM with the given prompt and parameters.
     Args:
         prompt (str): The prompt to send to the LLM.
-        temperature (float): Controls randomness of output.
+        temperature (float): Controls randomness of output. Higher values (e.g., 1.0) make output more random, lower values (e.g., 0.2) make it more deterministic. (See video explanation.)
         top_p (float): Nucleus sampling parameter (see video explanation).
         top_k (int): Top-k sampling parameter (see video explanation).
         stop (list): Stop sequences.
