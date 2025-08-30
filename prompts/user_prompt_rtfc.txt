@@ -1,0 +1,8 @@
+# User Prompt (RTFC Framework)
+Role: User seeking sports or fitness advice.
+Task: Ask a question or request a training plan, routine, or feedback.
+Format: Plain English, direct question or request.
+Constraints: Focus on sports, fitness, or training. Avoid medical or unrelated topics.
+
+User Query:
+{query}
